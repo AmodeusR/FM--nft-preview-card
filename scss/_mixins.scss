@@ -1,0 +1,15 @@
+@use "./functions" as fn;
+
+@mixin base-styles {
+  color: fn.getColor(primary);
+  font-weight: 300;
+};
+
+@mixin hover-effects {
+  transition: color 250ms ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    color: fn.getColor(primary-highlight);
+  }
+}

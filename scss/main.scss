@@ -1,0 +1,142 @@
+@use "./functions" as fn;
+@use "./mixins" as mix;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  min-height: 100vh;
+  margin: 0;
+  background: fn.getColor(bg-main);
+  
+  font-family: "Outfit", sans-serif;
+  color: white;
+}
+
+.card {
+  width: min(90%, 21rem);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: fn.getColor(bg-card);
+
+  &__image {
+    border-radius: .5rem;
+    
+    &-container {
+      position: relative;
+      user-select: none;
+      
+      &::after {
+        content: "";
+        border-radius: .5rem;
+        position: absolute;
+        inset: 0; 
+        background-color: rgba(fn.getColor(primary-highlight), .5);
+        background-image: url("../img/icon-view.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 250ms ease-in-out;
+      }
+
+      &:hover::after {
+        opacity: 1;
+        cursor: pointer;
+      }
+  
+    }
+    
+
+  }
+
+  &__title {
+    @include mix.hover-effects;
+  }
+
+  &__description {
+    color: fn.getColor(primary);
+    font-weight: 300;
+  }
+
+  &__merch-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid fn.getColor(division-line);
+  }
+
+  &__merch-info > * {
+    display: flex;
+    gap: .5rem;
+  }
+
+  &__price {
+    color: fn.getColor(primary-highlight);
+  }
+
+  &__time-left {
+    @include mix.base-styles;
+  }
+  
+  &__merch-creator {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__icon {
+    // This makes so flex images don't stretch
+    align-self: center;
+  }
+
+  &__merch-creator {
+    margin-top: 1rem;
+  }
+
+  &__avatar {
+    max-width: 2rem;
+    max-height: 2rem;
+
+    border: 3px solid fn.getColor(division-line);
+    border-radius: 50%;
+  }
+
+  &__author {
+    @include mix.base-styles;
+    margin: 0;
+  }
+}
+
+.highlight {
+  color: white;
+  font-weight: 400;
+
+  @include mix.hover-effects;
+}
+
+.attribution {
+  font-size: .8rem;
+  color: fn.getColor(primary);
+  font-weight: 300;
+
+  a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: .05rem;
+    @include mix.hover-effects;
+  }
+}
+

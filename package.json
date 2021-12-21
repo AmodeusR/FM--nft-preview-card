@@ -1,0 +1,24 @@
+{
+  "name": "fm--nft-preview-card",
+  "version": "1.0.0",
+  "description": "A Frontend Mentor challenge",
+  "scripts": {
+    "start": "parcel index.html",
+    "watch": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmodeusR/FM--nft-preview-card.git"
+  },
+  "keywords": [],
+  "author": "Amodeus R.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AmodeusR/FM--nft-preview-card/issues"
+  },
+  "homepage": "https://github.com/AmodeusR/FM--nft-preview-card#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "parcel": "^2.0.1"
+  }
+}
