@@ -4,7 +4,7 @@
   "description": "A Frontend Mentor challenge",
   "scripts": {
     "start": "parcel index.html",
-    "watch": "sass --watch scss:css"
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
