@@ -52,7 +52,7 @@
   - Mixins
   - Modules
   - Variables
-- Parcel Bundler
+- Parcel
 
 ### What I learned
 
