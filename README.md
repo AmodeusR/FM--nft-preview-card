@@ -5,7 +5,7 @@
 
 <img src="./design/desktop-preview.jpg" alt="Design preview for the NFT preview card component coding challenge" />
 
-<p align="center">This is a solution to the <a href="">NFT preview card component</a> challenge on Frontend Mentor.</p>
+<p align="center">This is a solution to the <a href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U">NFT preview card component</a> challenge on Frontend Mentor.</p>
 
 <h3 align="center">Languages</h3>
 <p align="center">
