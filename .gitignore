@@ -18,6 +18,5 @@
 # My ignores
 
 .parcel-cache
-*.md
 node_modules
 dist
