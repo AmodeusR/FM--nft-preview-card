@@ -27,7 +27,8 @@
 
 ### O desafio
 
-- Listar desafios
+- Exibir o layout ideal a depender da largura da tela do aparelho do usuário
+- Exibir hover states para elementos interativos
 
 ### Capturas de tela
 
